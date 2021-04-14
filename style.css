@@ -1,0 +1,202 @@
+/* FONTS */
+
+@font-face {
+    font-family: MeriendaReg;
+    src: url(./fonts/Merienda-Regular.ttf);
+}
+
+@font-face {
+    font-family: MeriendaBold;
+    src: url(./fonts/Merienda-Bold.ttf);
+}
+
+@font-face {
+    font-family: OleoReg;
+    src: url(./fonts/OleoScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: OleoBold;
+    src: url(./fonts/OleoScript-Bold.ttf);
+}
+
+*{
+    margin: 0px; padding: 0px;
+}
+
+#web-content{
+    
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+    margin: 0px auto;
+}
+
+/* HEADER */
+
+#header{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+}
+
+#wrap-title{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#wrap-title h1{
+    font-family: OleoBold;
+    font-size: 42px;
+    margin-left: 40px;
+}
+
+#wrap-subtitle{
+    justify-content: center;
+    width: 45%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#wrap-subtitle h3{
+    font-family: OleoReg;
+    margin-bottom: 10px;
+}
+
+#wrap-subtitle p{
+    font-size: 13px;
+    font-family: MeriendaReg;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+#main-content{
+    
+    margin: 0px auto;
+    width: 100%; height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 10px;
+    min-width: 250px; min-height: 243px;
+    max-width: 470px; max-height: 432px;
+    width: 25%; height: 50%;
+}
+
+.card img{
+    padding: 10px;
+    min-width: 200px;
+    min-height: 200px;
+    width: 60%; height: 85%;
+
+}
+
+.card p{
+    font-family: MeriendaReg;
+    writing-mode: vertical-lr;
+    height: 50%;
+    margin-top: 10px;
+}
+
+.card h3{
+    font-family: MeriendaBold;
+    font-size: 20px;
+    margin-left: 10px;
+    height: 15%;
+    width: 100%;
+}
+
+.center {
+    margin-top: 100px;
+}
+
+/* FOOTER */
+
+#footer{
+    font-family: OleoBold;
+    font-size: 20px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1157px) {
+    .responsive-right{
+        margin-top: 100px;
+    }
+
+    .responsive-left{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:1000px){
+
+    #web-content{
+        width: 80%;
+    }
+
+    #header{
+        height: 200px;
+    }
+
+    #wrap-title,
+    #wrap-subtitle{
+        width: 100%;
+        height: 50%;
+    }
+
+    #wrap-title h1{
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #wrap-subtitle{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:675px){
+
+    #web-content{
+        width: 100%;
+    }
+
+    #main-content{
+        width: 100%;
+    }
+
+    #header{
+        width: 80%;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width:539px){
+    .responsive-reset{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:372px){
+    #wrap-title h1{
+        font-size: 32px;
+    }
+
+    #wrap-subtitle h3{
+        font-size: 16px;
+    }
+}
